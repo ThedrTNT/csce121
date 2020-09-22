@@ -1,0 +1,5 @@
+2 3 12 12 Anibal
+1 Ferdinand
+100 55 Jeanne
+7 12 11 13 15 17 99 Anna
+2 4 6 8 Becky

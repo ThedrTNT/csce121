@@ -1,0 +1,72 @@
+// this is a comment.
+
+// this is the format of a testcase:
+// function ; inputs ; outputs
+// inputs are comma separated, in the same order as function parameters
+
+// amax testcases
+// amax ; x, len ; expected return value
+amax ; 8 6 7 5 3 0 9 , 7 ; 6 // example testcase
+amax ;  , 0 ; -1
+amax ; -1 2 4 -2 2.12 -5 , 6 ; 5
+amax ; -0 , 1 ; 0
+
+
+// asum testcases
+// asum ; x, len ; expected return value
+asum ;  , 0 ; 0
+asum ; -2 4 1 2.12 , 4 ; 9.12
+asum ; 0, 1 ; 0
+
+
+
+// axpy testcases
+// axpy ; a, x, y, len ; expected y
+axpy ; 0 , 1 2 , 2.12 1 , 2 ; 2.12 1
+axpy ; -1 , 1 2 , 2 1 , 2 ; 1 -1
+axpy ; 1 , , , 0 ; 
+axpy ; 1 , -1 2, -2 1, 2 ; -3 3
+
+
+
+// copy testcases
+// copy ; x, y, len ; expected y
+copy ;  ,  , 0 ; 
+copy ; -1 2 , 0 0 , 2 ; -1 2
+copy ; 1.12 2 , 1 1 , 2 ; 1.12 2
+
+
+
+// dot testcases
+// dot ; x, y, len ; expected return value
+dot ;  ,  , 0 ; 0
+dot ; -1 -2 , 2 1 , 2 ; -4
+dot ; 1 1 , 2.12 1 , 2 ; 3.12
+dot ; -1 1 , 1 1 , 2 ; 0
+
+
+
+// norm2 testcases
+// norm2 ; x, len ; expected return value
+norm2 ;  , 0 ; 0
+norm2 ; -4 3 , 2 ; 5
+norm2 ; 0 0 , 2 ; 0
+norm2 ; .5 , 1; .5
+
+
+
+// scale testcases
+// scale ; a, x, len ; expected x
+scale ; 1 , , 0 ; 
+scale ; -1 , -2 2 , 2 ; 2 -2
+scale ; 0 , 2 2.12 , 2 ; 0 0
+scale ; 2 , 2 2 , 2 ; 4 4
+
+
+
+// swap testcases
+// swap ; x, y, len ; expected x, expected y
+swap ;  , , 0 ; , 
+swap ; 1 2 , 2 1 , 2 ; 2 1 , 1 2
+swap ; -1 2.12 , -2 1 , 2; -2 1 , -1 2.12
+
